@@ -6,7 +6,10 @@ function wdiCard(){
   var directive =  {
     restrict: 'E',
     replace: true,
-    templateUrl: "templates/cardDirective.html"
+    templateUrl: "templates/cardDirective.html",
+    scope: {
+      question: '@'
+    }
   };
   return directive;
 }
